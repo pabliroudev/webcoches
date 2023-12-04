@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Car Repair</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/tms-0.4.1.js"></script>
+<script>
+$(document).ready(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: true,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 500,
+        preset: 'fade',
+        pagination: true, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: 'fromBottom', // fromLeft, fromRight, fromTop, fromBottom
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+})
+$(function () {
+    if ($(window).width() <= 1066) {
+        $("#slider .prev").css("left", "55px")
+        $("#slider .next").css("right", "55px")
+    }
+})
+</script>
+<!--[if lt IE 9]>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/html5.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+  <div class="bg">
+    <header>
+      <div class="main wrap">
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <p>28939, Arroyomolinos Madrid <span>91 432 12 40</span></p>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html" class="home"><img src="images/home.jpg" alt=""></a></li>
+          <li class="current"><a href="about.html">Acerca de</a></li>
+          <li><a href="maintenance.html">Mantenimiento</a></li>
+          <li><a href="repair.html">Reparaciones</a></li>
+          <li><a href="locations.html">Contactanos</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+  </header>
+  <div id="slider">
+    <div class="slider-block">
+      <div class="slider">
+        <ul class="items">
+          <li><img src="images/slide-1.jpg" alt="">
+            <div class="banner">
+              <div><span>Ford F-150</span><strong>Descubre nuestro Ford F-150</strong>
+                <p>No es solo una cosa que hace que sea una gran camioneta, es una combinación de características que hace que tu camioneta sea fantástica. Desde motores potentes hasta tecnología inteligente, hay una camioneta F-150® que satisface todos los aspectos de tu vida.</p>
+                <a href="#" class="button">Saber más</a></div>
+            </div>
+          </li>
+          <li><img src="images/slide-2.jpg" alt="">
+            <div class="banner">
+              <div><span>Maserati GT</span><strong>Descubre nuestro ultimo Maserati</strong>
+                <p>Vive a la manera del GranTurismo. Un viaje a la vez físico y emocional que conduce los sentidos hacia territorios inexplorados donde el único mapa que necesitas es la curiosidad. Es más que un coche, es un estilo de vida.</p>
+                <a href="#" class="button">Saber más</a></div>
+            </div>
+          </li>
+          <li><img src="images/slide-3.jpg" alt="">
+            <div class="banner">
+              <div><span>Honda HSC</span><strong>Descubre nuestro último Honda</strong>
+                <p>El HSC se presentó como un vehículo de peso ligero, montando un motor en posición central de aluminio de 3,500cc i-VTEC V6 con una transmisión de 6 velocidades controlada ya sea por levas en el volante estilo F1 o una palanca de cambios de línea única (como los coches automáticos en la consola central).</p>
+                <a href="#" class="button">Saber más</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="prev"></a> <a href="#" class="next"></a> </div>
+  </div>
+  <section id="content">
+    <div class="block-1 box-1">
+      <div> <img src="images/page1-img1.jpg" alt="">
+        <p class="text-1">Nuestros<strong>Servicios</strong></p>
+        <a href="#" class="button">Saber más</a> </div>
+      <div> <img src="images/page1-img2.jpg" alt="">
+        <p class="text-1">Mantenimiento<strong>Preventivo</strong></p>
+        <p class="upper"></p>
+        <a href="#" class="button">Saber más</a> </div>
+      <div> <img src="images/page1-img3.jpg" alt="">
+        <p class="text-1">Servicios<strong>reparaciones</strong></p>
+        <p class="upper"></p>
+        <a href="#" class="button">Saber más</a> </div>
+      <div class="last"> <img src="images/page1-img4.jpg" alt="">
+        <p class="text-1">Neumaticos<strong>Y llantas</strong></p>
+        <p class="upper"></p>
+        <a href="#" class="button">Saber más</a> </div>
+    </div>
+      </div>
+    </div>
+  </section>
+  <footer>Car Repair &copy; 2023 | <a href="#"> Política de privacidad</a></footer>
+</div>
+</body>
+</html>
